@@ -150,16 +150,15 @@ main{
 }
 .main-table-container{
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-.main-table-container::-webkit-scrollbar{
-    display: none;
-
+    height: 350px;
+    overflow-x:scroll ;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .main-currency-table, .main-commission-table {
     width: auto;
+    scroll-snap-align: center;
     min-width: 320px;
     max-width: 500px;
     height: 350px;
@@ -404,13 +403,30 @@ main{
     color: #757575
 
 }
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x:scroll ;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
+}
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+  .plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
+
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 20px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
