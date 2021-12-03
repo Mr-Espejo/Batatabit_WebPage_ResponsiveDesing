@@ -150,7 +150,7 @@ main{
 }
 .main-table-container{
     display: flex;
-    height: 350px;
+    height: 370px;
     overflow-x:scroll ;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -257,12 +257,7 @@ main{
     color: var(--warm-black);
 }
 
-.table-go-right,.table-go-left{
-    position: absolute;
-    right: -35px;
-    padding: 15px;
-    top: calc(50% - 20px);
-}
+
 
 .main-product-detail{
     position:relative;
@@ -407,7 +402,7 @@ main{
 }
 .plans-container--slider{
     display: flex;
-    height: 316px;
+    height: 350px;
     overflow-x:scroll ;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
